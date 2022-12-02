@@ -66,8 +66,7 @@ button {
     -o-transition: all 0.3s ease;
 }
 
-button:hover,
-button:active {
+button:hover {
     background-color: white;
     color: rgb(69, 40, 40);
 }
@@ -93,7 +92,7 @@ button:active {
     width: 3.6rem;
     height: 3.6rem;
     border: solid 1px rgb(69, 40, 40);
-    /* color: transparent; */
+    color: transparent;
 }
 
 .axis,
@@ -102,6 +101,11 @@ button:active {
     height: 3.6rem;
     border: none;
     font-weight: bold;
+}
+
+.axis {
+    padding-left: 1.2rem;
+    padding-top: 1.2rem;
 }
 
 .color {
