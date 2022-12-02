@@ -78,7 +78,7 @@ button:active {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 24px;
+    margin: 24px 0;
 }
 
 .row {
@@ -94,6 +94,14 @@ button:active {
     height: 3.6rem;
     border: solid 1px rgb(69, 40, 40);
     /* color: transparent; */
+}
+
+.axis,
+.no {
+    width: 3.6rem;
+    height: 3.6rem;
+    border: none;
+    font-weight: bold;
 }
 
 .color {
