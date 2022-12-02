@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDA Algorithm</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <h1>DDA Algorithm</h1>
+
+    <form action="">
+        <div>
+            <label for="">
+                X1 <input type="number">
+            </label>
+            <label for="">
+                Y1 <input type="number">
+            </label>
+        </div>
+        <div>
+            <label for="">
+                X2 <input type="number">
+            </label>
+            <label for="">
+                Y2 <input type="number">
+            </label>
+        </div>
+
+        <button type="submit">Generate Pixel</button>
+
+
+
+    </form>
+
+    <div class="container">
+        <div class="row">
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+        </div>
+        <div class="row">
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+        </div>
+        <div class="row">
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+        </div>
+        <div class="row">
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+        </div>
+        <div class="row">
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+        </div>
+        <div class="row">
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel color">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+            <div class="pixel">
+                0
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
